@@ -19,13 +19,28 @@ animal.species = 'feline';
 animal['name'] = 'Thurbjorn';
 //give it key noises and assign it to an empty array
 animal.noises = [];
-log object animal into the console
+//log object animal into the console
 console.log(animal);
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Array Creation ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+//create variable noises as an empty array
+var noises = [];
+//use bracket note to give a string of a sound
+noises[0] = 'meow';
+//use a function to add the second noise
+noises.push('purr');
+//use a method to add a sound to the front of the array
+noises.unshift('roar');
+//use bracket note to add another sound to the end
+noises[noises.length - 1] = 'hiss';
+//log the length of noises
+console.log(noises.length);
+//log the last element
+console.log(noises[noises.length - 1]);
+//log the array
+console.log(noises);
 
 
 //////////////////////////////////////////////////////////////////////
