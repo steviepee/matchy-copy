@@ -11,8 +11,16 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+//create a variable called animal and assign it to an empty object
+var animal = {};
+//use dot notaton to give it key species and value feline
+animal.species = 'feline';
+//use bracket notation to give it key name with a name
+animal['name'] = 'Thurbjorn';
+//give it key noises and assign it to an empty array
+animal.noises = [];
+log object animal into the console
+console.log(animal);
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Array Creation ///////////////////////////////////////////
