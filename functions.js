@@ -12,13 +12,35 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+//create a function search that takes an array and the string of a name
+function search(array, string) {
+    //iterate through the array
+    for (var i = 0; i < array.length; i++) {
+        //if the name matches the name of an object in the array
+        if (array[i].name === string) {
+            //return the object with that name
+            return array[i];
+        }
+    }//if the name doesn't match any names in the array, return null
+    return null;
+}
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+//create a function that takes in 3 specified parameters
+function replace(animals, name, replacement) {
+    //iterate over the animals array.
+    for (i = 0; i < animals.length; i++) {
+        //if the name parameter matches an object name
+        if (animals[i].name === name) {
+            //replace the entire object with the replacement parameter
+           animals[i] = replacement;
+           return animals;
+        }
+    }
+}
 
 
 //////////////////////////////////////////////////////////////////////
