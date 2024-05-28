@@ -46,7 +46,18 @@ function replace(animals, name, replacement) {
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+//make a function remove with the specified parameters
+function remove(animals, name) {
+    //iterate over the array
+    for (i = 0; i < animals.length; i++) {
+        //if the names match
+        if (animals[i].name === name) {
+            //remove the object from the array
+           animals.splice(i, 1);
+           return animals;
+        } 
+    }
+}
 
 
 //////////////////////////////////////////////////////////////////////
