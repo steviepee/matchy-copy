@@ -63,7 +63,22 @@ function remove(animals, name) {
 //////////////////////////////////////////////////////////////////////
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+//create function add
+function add(animals, animal) {
+    //iterate over array
+    for (i = 0; i < animals.length; i++) {
+        //if animal doesn't have a proper name or species
+        if(animal.name.length <= 0 || animal.species.length <= 0) {
+            //return a condescending phrase
+            return "Better luck next time!";
+        }//if it does, check it against each name in the array. If any of them match
+        if (animal.name === animals[i].name) {
+            //return another phrase
+            return "Hey, I know that guy!!";
+        }//if animal survives these loops, then name&species have a +length and the name doesn't match ours, so add it
+        return animals.push(animal);
+    }
+}
 
 
 /**
