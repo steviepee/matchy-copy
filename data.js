@@ -45,16 +45,21 @@ noises.push('purr');
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
+//use bracket notation to give prop noises the value of array noises
+animal['noises'] = noises;
+//add another noise
+animal.noises.push('bark');
+//log object animal
+console.log(animal);
 
 
 /* *******************************************************************
  * Step 4 - Review
  *
  * 1. What are the different ways you can access properties on objects?
- *
+ * Bracket notation and dot notation and for in loops
  * 2. What are the different ways of accessing elements on arrays?
- *
+ *bracket notation, for loops, various array methods
  * *******************************************************************
  */
 
@@ -70,8 +75,35 @@ noises.push('purr');
 //////////////////////////////////////////////////////////////////////
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
-
-
+//create animals as an empty array
+var animals = [];
+//push animal into it
+animals.push(animal);
+//create duck to the preferred specifications
+var duck = {
+  species: 'duck',
+  name: 'Jerome', 
+  noises: ['quack', 'honk', 'sneeze', 'woosh']
+}
+//push it into animals
+animals.push(duck);
+//create two more animals to my own specs
+var dog = {
+  species: 'canine',
+  name: 'Bingo',
+  noises: ['bark', 'whimper', 'howl']
+}
+var skunk = {
+  species: 'rodentia',
+  name: 'Chiaotzu',
+  noises: ['warble', 'screech', 'gassy sounds']
+}
+//push these into the animals array
+animals.push(dog, skunk);
+//log animals
+console.log(animals);
+//log the length of animals
+console.log(animals.length);
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
