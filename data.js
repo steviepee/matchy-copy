@@ -29,19 +29,18 @@ console.log(animal);
 var noises = [];
 //use bracket note to give a string of a sound
 noises[0] = 'meow';
-//use a function to add the second noise
+//use a method to add the second noise
 noises.push('purr');
 //use a method to add a sound to the front of the array
-noises.unshift('roar');
-//use bracket note to add another sound to the end
-noises[noises.length - 1] = 'hiss';
-//log the length of noises
-console.log(noises.length);
-//log the last element
-console.log(noises[noises.length - 1]);
-//log the array
-console.log(noises);
-
+ noises.unshift('roar');
+ //use bracket note to add another sound to the end
+ noises[noises.length] = 'hiss';
+ //log the length of noises
+ console.log(noises.length);
+ //log the last element
+ console.log(noises[noises.length - 1]);
+ //log the array
+ console.log(noises);
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
